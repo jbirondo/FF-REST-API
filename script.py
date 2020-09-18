@@ -33,3 +33,10 @@ if res.ok:
     def mean(x): return sum(x)/len(x)
 
     replacement_value = mean(wr_fantasy_points)
+
+    for player in data:
+        if player.get('position') == pos:
+            vor = player.get('fantasy_points').get('ppr') - replacement_value
+            print(
+                player.get('player_name'), 'had a VOR of', vor
+            )
