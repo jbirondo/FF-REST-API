@@ -38,5 +38,5 @@ if res.ok:
         if player.get('position') == pos:
             vor = player.get('fantasy_points').get('ppr') - replacement_value
             print(
-                player.get('player_name'), ' had a VOR of', vor
+                player.get('player_name'), ' had a VOR of ', vor
             )
